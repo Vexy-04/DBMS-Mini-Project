@@ -48,6 +48,7 @@ $conn->close();
     <!-- Bootstrap, FontAwesome, Custom Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
     <!-- Google Fonts -->
@@ -79,16 +80,16 @@ $conn->close();
     <main class="main">
 
         <!-- Latest Articles -->
-        <div class="section jumbotron mb-0 h-100">
+        <div class="section jumbotron mb-0 h-100 bgclr">
             <!-- container -->
-            <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="container d-flex flex-column justify-content-center align-items-center h-100 ">
 
-                <div class="wrapper my-0 pt-3 bg-white w-50 text-center">
+                <!-- <div class="wrapper my-0 pt-3 bg-white w-50 text-center">
                     <img src="img/logo/logo.png" alt="dev culture logo" style="width: 100px;height: auto;">
-                </div>
+                </div> -->
 
                 <!-- row -->
-                <div class="wrapper bg-white rounded px-4 py-4 w-50">
+                <div class="wrapper rounded px-4 py-4 w-50 bbox">
 
                     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                         <div class="form-group">

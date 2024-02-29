@@ -1,0 +1,10 @@
+.bgclr{
+    background-color: #10182B;
+}
+
+.bbox{
+    box-shadow: 2px 2px 20px 15px #172139;
+    /* box-shadow: 20px 15px #172139; */
+    background-color: #10182B;
+    color: white;
+}
