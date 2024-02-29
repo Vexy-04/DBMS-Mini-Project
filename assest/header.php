@@ -1,4 +1,5 @@
-<header class="blog-header border-bottom shadow-sm">
+<!-- <header class="blog-header border-bottom shadow-sm"> -->
+<header class="blog-header bhead">
     <div class="container-fluid" style="padding-left: 3rem; padding-right:3rem">
 
         <div class="d-flex flex-column flex-md-row align-items-center py-2">

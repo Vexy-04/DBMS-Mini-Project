@@ -95,6 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Bootstrap, FontAwesome, Custom Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
     <!-- Google Fonts -->
@@ -114,16 +115,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="main">
 
         <!-- Latest Articles -->
-        <div class="section jumbotron mb-0 h-100">
+        <div class="section jumbotron mb-0 h-100 bgclr">
             <!-- container -->
             <div class="container d-flex flex-column justify-content-center align-items-center h-100">
 
-                <div class="wrapper my-0 pt-3 bg-white w-50 text-center">
+                <!-- <div class="wrapper my-0 pt-3 bg-white w-50 text-center">
                     <img src="img/logo/logo.png" alt="dev culture logo" style="width: 100px;height: auto;">
-                </div>
+                </div> -->
 
                 <!-- row -->
-                <div class="wrapper bg-white rounded px-4 py-4 w-50">
+                <div class="wrapper rounded px-4 py-4 w-50 bbox bbox2">
 
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <div class="form-group">
