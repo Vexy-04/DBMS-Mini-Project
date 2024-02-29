@@ -4,7 +4,7 @@
         <div class="d-flex flex-column flex-md-row align-items-center py-2">
             <a href="index.php" class="my-0 mr-md-auto" style="width: 6rem;">
                 <!-- <img src="img/logo/logo.png" alt="dev culture logo" style="width: 80%;height: auto;"> -->
-                <h3>BlogSpot</h3>
+                <h3>InkSpark</h3>
             
             </a>
 
