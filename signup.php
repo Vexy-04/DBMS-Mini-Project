@@ -1,3 +1,4 @@
+<?php include "assest/head.php"; ?>
 <?php
 // FILEPATH: /c:/xampp/htdocs/blog/signup.php
 
@@ -37,11 +38,30 @@ $conn->close();
 
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/flogo.png" sizes="32x32" type="image/png">
+
+    <!-- Bootstrap, FontAwesome, Custom Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+
+
     <title>Signup</title>
 </head>
-<body>
-    <h1>Signup</h1>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <?php include "assest/header.php" ?>
+
+    <!-- <h1>Signup</h1>
     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <label for="username">Username:</label>
         <input type="text" name="username" required><br>
@@ -53,6 +73,46 @@ $conn->close();
         <input type="email" name="email" required><br>
 
         <input type="submit" value="Signup">
-    </form>
+    </form> -->
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Latest Articles -->
+        <div class="section jumbotron mb-0 h-100">
+            <!-- container -->
+            <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+
+                <div class="wrapper my-0 pt-3 bg-white w-50 text-center">
+                    <img src="img/logo/logo.png" alt="dev culture logo" style="width: 100px;height: auto;">
+                </div>
+
+                <!-- row -->
+                <div class="wrapper bg-white rounded px-4 py-4 w-50">
+
+                    <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" class="form-control" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" class="form-control" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" class="form-control" required><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Signup">
+                        </div>
+                    </form>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+
 </body>
+
 </html>
