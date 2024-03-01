@@ -11,8 +11,7 @@
 
 .dbtn {
   width: 100px;
-  box-shadow:  8px 8px 8px #090e17,
-  -8px -8px 8px #172239;
+  box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
   border-radius: 50px;
   color: white;
 }
@@ -20,7 +19,32 @@
 .dbtn:hover {
   width: 100px;
   background: #101828;
-  box-shadow: inset 8px 8px 8px #090e17,
-              inset -8px -8px 8px #172239;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
   color: white;
+}
+
+/* .incs {
+  height: 50px;
+  border: none; 
+  border-radius: 30px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
+.incs:focus {
+  height: 50px;
+  border: none; 
+  border-radius: 30px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+} */
+
+.incs{
+  border-radius: 5px;
+}
+
+.incsm{
+  margin-bottom: -20px;
 }

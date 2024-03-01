@@ -129,12 +129,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <div class="form-group">
                             <label>Username</label>
-                            <input type="text" name="username" class="form-control <?= (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="">
+                            <input type="text" name="username" class="form-control incs <?= (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="">
                             <span class="invalid-feedback"><?= $username_err; ?></span>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" name="password" class="form-control <?= (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                            <input type="password" name="password" class="form-control incs <?= (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                             <span class="invalid-feedback"><?= $password_err; ?></span>
                         </div>
                         <div class="form-group">
