@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div> -->
 
                 <!-- row -->
-                <div class="wrapper rounded px-4 py-4 w-50 bbox">
+                <div class="wrapper px-4 py-4 w-50 bbox">
 
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <div class="form-group">
