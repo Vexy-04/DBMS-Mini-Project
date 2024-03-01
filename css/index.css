@@ -2,6 +2,15 @@
   background-color: #101828;
 }
 
+.mt {
+  padding-top: 50px;
+}
+
+.cont {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
 .dsc {
   padding: 40px;
   border-radius: 50px;
@@ -24,7 +33,6 @@
   box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
   color: white;
 } */
-
 
 .ctxt {
   color: white;

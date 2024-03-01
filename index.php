@@ -66,10 +66,10 @@ $most_read_articles = $stmt->fetchAll();
         </div><!-- /Jumbotron -->
 
         <!-- Latest Articles -->
-        <div class="bgclr">
+        <div class="bgclr mt">
 
             <!-- container -->
-            <div class="container bgclr">
+            <div class="cont bgclr">
 
                 <!-- row -->
                 <div class="row">
@@ -116,7 +116,7 @@ $most_read_articles = $stmt->fetchAll();
         <!-- Most Read -->
         <div class="bgclr">
             <!-- container -->
-            <div class="container bgclr">
+            <div class="cont bgclr">
                 <!-- row -->
                 <div class="row">
                     <div class="col-md-8">
