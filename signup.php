@@ -94,19 +94,20 @@ $conn->close();
                     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                         <div class="form-group">
                             <label for="username">Username:</label>
-                            <input type="text" name="username" class="form-control" required><br>
+                            <input type="text" name="username" class="form-control incs incsm" required><br>
                         </div>
                         <div class="form-group">
                             <label for="password">Password:</label>
-                            <input type="password" name="password" class="form-control" required><br>
+                            <input type="password" name="password" class="form-control incs incsm" required><br>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" class="form-control" required><br>
+                            <input type="email" name="email" class="form-control incs incsm" required><br>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Signup">
+                            <input type="submit" class="btn dbtn" value="Signup">
                         </div>
+                        <p><a href="#" class="text-muted">Already have a account?</a></p>
                     </form>
                 </div>
                 <!-- /row -->
