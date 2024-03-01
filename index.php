@@ -25,6 +25,7 @@ $most_read_articles = $stmt->fetchAll();
 <!-- Custom CSS -->
 <!-- <link href="css/home.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
 <style>
     .bg-div {
         background: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -41,14 +42,14 @@ $most_read_articles = $stmt->fetchAll();
 <title>Home</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 hdclr">
 
     <!-- Header -->
     <?php include "assest/header.php" ?>
     <!-- </Header> -->
 
     <!-- Main -->
-    <main class="main">
+    <main class="main bgclr">
 
         <!-- Jumbotron -->
         <div class="jumbotron text-center p-0 mb-0">
