@@ -89,7 +89,7 @@ $conn->close();
                 </div> -->
 
                 <!-- row -->
-                <div class="wrapper rounded px-4 py-4 w-50 bbox">
+                <div class="wrapper px-4 py-4 w-50 bbox">
 
                     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                         <div class="form-group">
