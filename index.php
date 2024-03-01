@@ -28,7 +28,7 @@ $most_read_articles = $stmt->fetchAll();
 <link type="text/css" rel="stylesheet" href="css/index.css" />
 <style>
     .bg-div {
-        background: linear-gradient(rgba(0, 0, 0, 0.5),
+        background: linear-gradient(rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.5)), url("./img/logo/bg.png");
         /* Full height */
         height: 680px;
@@ -49,7 +49,7 @@ $most_read_articles = $stmt->fetchAll();
     <!-- </Header> -->
 
     <!-- Main -->
-    <main class="main">
+    <main class="main ">
 
         <!-- Jumbotron -->
         <div class="jumbotron text-center p-0 mb-0">
@@ -66,7 +66,7 @@ $most_read_articles = $stmt->fetchAll();
         </div><!-- /Jumbotron -->
 
         <!-- Latest Articles -->
-        <div class="section section-grey">
+        <div class="bgclr">
 
             <!-- container -->
             <div class="container bgclr">
@@ -114,7 +114,7 @@ $most_read_articles = $stmt->fetchAll();
         </div><!-- /Latest Articles -->
 
         <!-- Most Read -->
-        <div class="section section-grey">
+        <div class="bgclr">
             <!-- container -->
             <div class="container bgclr">
                 <!-- row -->
