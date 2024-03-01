@@ -8,3 +8,19 @@
   background-color: #101828;
   color: white;
 }
+
+.dbtn {
+  width: 100px;
+  box-shadow:  8px 8px 8px #090e17,
+  -8px -8px 8px #172239;
+  border-radius: 50px;
+  color: white;
+}
+
+.dbtn:hover {
+  width: 100px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17,
+              inset -8px -8px 8px #172239;
+  color: white;
+}
