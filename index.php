@@ -42,14 +42,14 @@ $most_read_articles = $stmt->fetchAll();
 <title>Home</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 hdclr">
 
     <!-- Header -->
     <?php include "assest/header.php" ?>
     <!-- </Header> -->
 
     <!-- Main -->
-    <main class="main">
+    <main class="main bgclr">
 
         <!-- Jumbotron -->
         <div class="jumbotron text-center p-0 mb-0">
