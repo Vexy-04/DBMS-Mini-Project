@@ -1,0 +1,34 @@
+.bgclr {
+  background-color: #101828;
+}
+
+.dsc {
+  padding: 40px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  color: white;
+}
+
+.dscl {
+  margin-bottom: 30px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  color: white;
+}
+
+/* .cdsc {
+  border-radius: 10px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  color: white;
+} */
+
+.ctxt {
+  color: white;
+}
+
+a {
+  color: white;
+}
