@@ -1,17 +1,16 @@
 <!-- <header class="blog-header border-bottom shadow-sm"> -->
 <header class="blog-header bhead">
+    <link rel="stylesheet" href="css/header.css">
     <div class="container-fluid" style="padding-left: 3rem; padding-right:3rem">
-
         <div class="d-flex flex-column flex-md-row align-items-center py-2">
             <a href="index.php" class="my-0 mr-md-auto" style="width: 6rem;">
                 <!-- <img src="img/logo/logo.png" alt="dev culture logo" style="width: 80%;height: auto;"> -->
-                <h3>InkSpark</h3>
-            
+                <h3 style="margin-bottom:0px;">InkSpark</h3>
             </a>
 
             <?php if ($loggedin) : ?>
 
-                <nav class="my-2 my-md-0 mr-md-3">
+                <nav class="my-2 my-md-0 mr-md-3 txtclr">
                     <a class="p-2 px-5 text-muted" href="index.php">Home</a>
                     <a class="p-2 px-5 text-muted" href="categories.php">Category</a>
                     <a class="p-2 px-5 text-muted" href="article.php">Article</a>
@@ -24,9 +23,9 @@
                 </nav>
 
             <?php endif;  ?>
-            <a class="btn btn-outline-primary" href="signup.php">Sign up</a>
+            <a class="btn dbtn" href="signup.php">Sign up</a>
 
-            <a class="btn btn-outline-success" href="<?= ($loggedin) ? 'Logout.php' : 'login.php'; ?>">
+            <a class="btn dbtn" href="<?= ($loggedin) ? 'Logout.php' : 'login.php'; ?>">
                 <?= ($loggedin) ? 'Logout' : 'Sign in'; ?>
             </a>
 

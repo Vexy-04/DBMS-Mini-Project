@@ -1,0 +1,18 @@
+.dbtn {
+  width: 100px;
+  box-shadow: 5px 5px 8px #090e17, -5px -5px 8px #172239;
+  border-radius: 50px;
+  color: white;
+  margin-left: 15px;
+}
+
+.dbtn:hover {
+  width: 100px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+ 
+.txtcle{
+    color: white;
+}
