@@ -1,11 +1,10 @@
-.bgclr{
-    background-color: #101828;
+.bgclr {
+  background-color: #101828;
 }
 
-.bbox{
-    box-shadow: 20px 20px 30px #0d1320,
-                -20px -20px 30px #131d30;
-                border-radius: 100px !important;
-    background-color: #101828;
-    color: white;
+.bbox {
+  box-shadow: 20px 20px 30px #0d1320, -20px -20px 30px #131d30;
+  border-radius: 30px;
+  background-color: #101828;
+  color: white;
 }

@@ -82,7 +82,7 @@ $most_read_articles = $stmt->fetchAll();
 
                         <!-- post -->
                         <div class="col-md-4">
-                            <div class="post">
+                            <div class="post pcard">
                                 <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
                                     <img src="img/article/<?= $article['article_image'] ?>" alt="">
                                 </a>
