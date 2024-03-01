@@ -42,14 +42,14 @@ $most_read_articles = $stmt->fetchAll();
 <title>Home</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100 hdclr">
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Header -->
     <?php include "assest/header.php" ?>
     <!-- </Header> -->
 
     <!-- Main -->
-    <main class="main bgclr">
+    <main class="main">
 
         <!-- Jumbotron -->
         <div class="jumbotron text-center p-0 mb-0">
@@ -69,7 +69,7 @@ $most_read_articles = $stmt->fetchAll();
         <div class="section section-grey">
 
             <!-- container -->
-            <div class="container">
+            <div class="container bgclr">
 
                 <!-- row -->
                 <div class="row">
@@ -83,7 +83,7 @@ $most_read_articles = $stmt->fetchAll();
 
                         <!-- post -->
                         <div class="col-md-4">
-                            <div class="post pcard">
+                            <div class="post pcard dsc">
                                 <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
                                     <img src="img/article/<?= $article['article_image'] ?>" alt="">
                                 </a>
@@ -96,7 +96,7 @@ $most_read_articles = $stmt->fetchAll();
                                         </span>
                                     </div>
 
-                                    <h3 class="post-title"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></h3>
+                                    <h3 class="post-title ctxt"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></h3>
 
                                 </di>
                             </div>
@@ -116,7 +116,7 @@ $most_read_articles = $stmt->fetchAll();
         <!-- Most Read -->
         <div class="section section-grey">
             <!-- container -->
-            <div class="container">
+            <div class="container bgclr">
                 <!-- row -->
                 <div class="row">
                     <div class="col-md-8">
@@ -130,7 +130,7 @@ $most_read_articles = $stmt->fetchAll();
                             <?php foreach ($most_read_articles as $article) : ?>
 
                                 <!-- post -->
-                                <div class="col-md-12">
+                                <div class="col-md-12 dscl">
                                     <div class="post post-row">
                                         <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
                                             <img src="img/article/<?= $article['article_image'] ?>" alt="">
@@ -238,7 +238,7 @@ $most_read_articles = $stmt->fetchAll();
                                 <ul>
                                     <!-- /category -->
                                     <?php foreach ($categories as $category) : ?>
-                                        <li>
+                                        <li class="cdsc">
                                             <a href="articleOfCategory.php?catID=<?= $category['category_id'] ?>"> <?= $category["category_name"] ?>
                                                 <span style="background-color: <?= $category["category_color"] ?>"> <?= $category["article_count"] ?></span>
                                             </a>
