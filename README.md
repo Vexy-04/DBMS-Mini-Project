@@ -1,3 +1,5 @@
+# Project in Progress
+
 # PHP Native Blog Project
 
 This project was built to master some PHP native coding skills.  
@@ -32,3 +34,4 @@ The MySQL database server
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
