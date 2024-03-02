@@ -46,7 +46,7 @@ $comments = $stmt->fetchAll();
             <div class="row">
 
                 <!-- Article -->
-                <div class="content bg-white col-lg-9 p-0 border border-muted">
+                <div class="content col-lg-9 p-0 dsc">
 
 
                     <!-- Post Image -->
@@ -56,7 +56,7 @@ $comments = $stmt->fetchAll();
                     <div class="post__content w-75 mx-auto">
 
                         <div class="post-head text-center my-5">
-                            <h1 class="post__title">
+                            <h1 class="post__title st">
                                 <?= $article["article_title"] ?>
                             </h1>
 
@@ -77,12 +77,12 @@ $comments = $stmt->fetchAll();
                         </div>
 
                         <!-- author Info -->
-                        <div class="post-footer d-flex my-5">
+                        <div class="post-footer d-flex my-5 aucd">
 
                             <img class="profile-thumbnail rounded-circle pr-2" src="img/avatar/<?= $article['author_avatar'] ?>" alt="test avatar image" style="width: 120px;height: 120px;">
                             <div class="d-flex flex-column justify-content-around">
-                                <h3 class="font-italic mb-1"><?= $article['author_fullname'] ?></h3>
-                                <p class="text-muted mb-1"><?= $article['author_desc'] ?></p>
+                                <h3 class="font-italic mb-1 st"><?= $article['author_fullname'] ?></h3>
+                                <p class="mb-1"><?= $article['author_desc'] ?></p>
                                 <div class="social_media">
                                     <a href="" class="mr-3"><i class="fa fa-twitter"></i><span class="px-1"><?= $article['author_twitter'] ?></span></a>
                                     <a href="" class="mr-3"><i class="fa fa-github"></i><span class="px-1"><?= $article['author_github'] ?></span></a>
@@ -99,12 +99,12 @@ $comments = $stmt->fetchAll();
                 <!-- Aside -->
                 <div class="aside col-3">
                     <!-- Author Info -->
-                    <div class="p-3 bg-white border  border-muted">
+                    <div class="p-3 aucd2">
                         <div class="d-flex align-items-center">
                             <img class="profile-thumbnail rounded-circle" src="img/avatar/<?= $article['author_avatar'] ?>" alt="test avatar image" style="width: 60px;height: 60px;">
-                            <h5 class="font-italic m-0"><?= $article['author_fullname'] ?></h5>
+                            <h5 class="font-italic m-0 st"><?= $article['author_fullname'] ?></h5>
                         </div>
-                        <p class="author_desc p-1"><?= $article['author_desc'] ?></p>
+                        <p class="author_desc p-1 st"><?= $article['author_desc'] ?></p>
                         <div class="d-flex flex-column justify-content-between">
                             <div class="author_links">
                                 <a href="https://twitter.com/<?= $article['author_twitter'] ?>" class="mr-3"><i class="fa fa-lg fa-twitter"></i></a>
@@ -124,10 +124,10 @@ $comments = $stmt->fetchAll();
                             <p class="author_desc"><?= $article['author_desc'] ?></p>
 
                         </div> -->
-                    <div class="card bg-light my-3">
-                        <div class="card-header"><strong> More from <?= $article['author_fullname'] ?></strong></div>
+                    <div class="card my-3 aucd2">
+                        <div class="card-header st"><strong> More from <?= $article['author_fullname'] ?></strong></div>
 
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush ">
                             <?php foreach ($articles as $article) : ?>
                                 <li class="list-group-item"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></li>
                                 <!-- <li class="list-group-item"><a href="">How To Create A Simple With CSS</a></li>
@@ -145,26 +145,26 @@ $comments = $stmt->fetchAll();
 
             <!-- Comments -->
             <div id="comment" class="row">
-                <div class="col-lg-9 border p-4 mt-3 bg-white">
+                <div class="col-lg-9 p-4 mt-3 aucd2">
 
                     <div class="comments">
-                        <h2 class="text-center text-muted py-3">Comments</h2>
+                        <h2 class="text-center py-3 st">Comments</h2>
 
                         <?php foreach ($comments as $comment) : ?>
 
-                            <div class="card mb-3">
-                                <div class="card-body">
+                            <div class="card mb-3 cmtcd">
+                                <div class="card-body ">
                                     <div class="row">
                                         <div class="col-md-2 pr-0 text-center">
-                                            <img src="img/avatar/<?= $comment['comment_avatar'] ?>" class="img img-rounded img-fluid w-50" />
+                                            <img src="img/avatar/<?= $comment['comment_avatar'] ?>" class="img rounded-circle  img-fluid w-50" />
                                         </div>
                                         <div class="col-md-10">
                                             <p>
-                                                <a class="float-left" href="#"><strong><?= "User-" . $comment['comment_username'] ?></strong></a>
-                                                <span class="float-right px-2 text-muted"><?= date_format(date_create($comment['comment_date']), "d F Y h:i") ?></span>
+                                                <a class="float-left " href="#"><strong><?= "User-" . $comment['comment_username'] ?></strong></a>
+                                                <span class="float-right px-2 st"><?= date_format(date_create($comment['comment_date']), "d F Y h:i") ?></span>
                                             </p>
                                             <div class="clearfix"></div>
-                                            <p class="text-secondary mt-2"><?= $comment['comment_content'] ?></p>
+                                            <p class="st mt-2"><?= $comment['comment_content'] ?></p>
                                         </div>
                                     </div>
 
@@ -184,8 +184,9 @@ $comments = $stmt->fetchAll();
                 <input type="hidden" name="username" value="Guest">
             <?php endif; ?>
             <input type="hidden" name="id_article" value="<?= $article_id ?>">
-            <textarea name="comment" class="form-control" rows="3" placeholder="Add your comment..."></textarea>
-            <button name="submit" type="submit" class="btn btn-success float-right mt-1">Add Comment</button>
+            <textarea name="comment" class="form-control cmtbox" rows="3" placeholder="Add your comment..."></textarea>
+            <br>
+            <button name="submit" type="submit" class="btn cmtdb float-right mt-1">Add Comment</button>
         </div>
         <div class="clearfix"></div>
     </form>

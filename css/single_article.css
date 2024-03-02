@@ -1,69 +1,126 @@
 .content {
-    color: #505050;
-    margin-top: 5.2rem;
+  color: #505050;
+  margin-top: 5.2rem;
+}
+
+.dsc {
+  padding: 50px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  color: white;
 }
 
 .post__img {
-    height: 25rem;
-    /* background-image: url('../img/article/post_img_1.jpg'); */
-    background-size: cover;
-    background-position: inherit;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 25rem;
+  /* background-image: url('../img/article/post_img_1.jpg'); */
+  background-size: cover;
+  background-position: inherit;
 }
 
 .profile-thumbnail {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .bg-l {
-    background-color: #e9ecef;
+  background-color: #101828;
 }
 
 .content img {
-    max-width: 95%;
-    height: auto;
+  max-width: 95%;
+  height: auto;
 }
 
 .content table * {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 /* Article  */
 
 .blog-header {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .post__date {
-    display: block;
-    margin-top: -.5rem;
-    color: #767676;
+  display: block;
+  margin-top: -0.5rem;
+  color: #767676;
 }
 
 /* Author */
 
 .author_desc {
-    margin: 10px 0;
-    font-size: 13px;
-    color: #565656;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #565656;
 }
 
 .author_links {
-    text-align: center;
+  text-align: center;
 }
 
 video {
-    width: 100%;
+  width: 100%;
 }
 
 /* Aside */
 
 .aside {
-    margin-top: 5.2rem;
-    /* position: fixed;
+  margin-top: 5.2rem;
+  /* position: fixed;
     right: 0;
     top: 6.5rem; */
+}
+
+.st {
+  color: white;
+}
+
+.aucd {
+  padding: 40px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+  color: white;
+}
+
+.aucd2 {
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+}
+.cmtcd {
+  border-radius: 20px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+}
+
+.cmtbox {
+  border-radius: 20px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+}
+
+.cmtbox:focus {
+  border-radius: 20px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+}
+
+.cmtdb {
+  box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
+  border-radius: 50px;
+  color: white;
+}
+
+.cmtdb:hover {
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
 }
