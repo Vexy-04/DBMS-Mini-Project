@@ -25,7 +25,7 @@
             <a class="btn dbtn" href="signup.php">Sign up</a>
 
             <a class="btn dbtn" href="<?= ($loggedin) ? 'Logout.php' : 'login.php'; ?>">
-                <?= ($loggedin) ? 'Logout' : 'Sign in'; ?>
+                <?= ($loggedin) ? 'Logout' : 'Log in'; ?>
             </a>
 
         </div>

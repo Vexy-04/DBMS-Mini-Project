@@ -30,8 +30,3 @@ The MySQL database server
 
 * [xampp](https://www.apachefriends.org/) - PHP development environment
 * [visualstudio](https://code.visualstudio.com/) - Code editor
-
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
