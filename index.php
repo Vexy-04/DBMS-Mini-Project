@@ -30,7 +30,7 @@ $most_read_articles = $stmt->fetchAll();
 <style>
     .bg-div {
         background: linear-gradient(rgba(0, 0, 0, 0),
-                rgba(0, 0, 0, 0.5)), url("./img/logo/bg.png");
+                rgba(0, 0, 0, 0.5)), url("./img/logo/is.png");
         /* Full height */
         height: 680px;
         /* Center and scale the image nicely */
