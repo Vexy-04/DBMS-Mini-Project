@@ -11,7 +11,7 @@
     <?php include "assest/header.php" ?>
 
     <!-- Main -->
-    <main role="main" class="main">
+    <main role="main" class="main abg">
 
         <div class="jumbotron text-center abg">
             <h1 class="display-3 font-weight-normal awt">Add Author</h1>
