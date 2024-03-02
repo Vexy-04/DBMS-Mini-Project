@@ -2,6 +2,7 @@
 <?php include "assest/head.php"; ?>
 
 <title>Add Author</title>
+<link type="text/css" rel="stylesheet" href="css/add_author.css" />
 </head>
 
 <body>
@@ -12,11 +13,11 @@
     <!-- Main -->
     <main role="main" class="main">
 
-        <div class="jumbotron text-center">
-            <h1 class="display-3 font-weight-normal text-muted">Add Author</h1>
+        <div class="jumbotron text-center abg">
+            <h1 class="display-3 font-weight-normal awt">Add Author</h1>
         </div>
 
-        <div class="container">
+        <div class="cont abg">
             <div class="row">
 
                 <div class="col-lg-12 mb-4">
@@ -72,7 +73,7 @@
     </main>
 
     <!-- Footer -->
-    <!-- <?php include "assest/footer.php" ?> -->
+    <?php include "assest/footer.php" ?>
 
 
 </body>

@@ -35,20 +35,20 @@ $authors = $stmt->fetchAll();
     <!-- Main -->
     <main role="main" class="main">
         <div class="jumbotron text-center mb-0 bg1">
-            <h1 class="display-3 font-weight-normal text-muted">All Author</h1>
+            <h1 class="display-3 font-weight-normal wt">All Author</h1>
         </div>
 
         <div class="py-3 px-5 bg2">
             <div class="row">
 
                 <div class="col-lg-12 text-center mb-3">
-                    <a class="btn btn-info" href="add_author.php">Add Author</a>
+                    <a class="btn abtn" href="add_author.php">Add Author</a>
                 </div>
 
             </div>
 
             <div class="row">
-                <table class='table table-striped table-bordered'>
+                <table class='table table-striped table-bordered tcd'>
 
                     <thead class='thead-dark'>
                         <tr>
@@ -70,13 +70,13 @@ $authors = $stmt->fetchAll();
                             echo "<tr>";
                             ?>
 
-                            <td><?= $author['author_id'] ?></td>
-                            <td><?= $author['author_fullname'] ?></td>
-                            <td><?= $author['author_desc'] ?></td>
+                            <td class="wt"><?= $author['author_id'] ?></td>
+                            <td class="wt"><?= $author['author_fullname'] ?></td>
+                            <td class="wt"><?= $author['author_desc'] ?></td>
                             <td>
                                 <img src="img/avatar/<?= $author['author_avatar'] ?>" style="width: 100px; height: auto;border-radius: 100%;">
                             </td>
-                            <td><?= $author['author_email'] ?></td>
+                            <td class="wt"><?= $author['author_email'] ?></td>
                             <td class="text-center">
                                 <a href="https://twitter.com/<?= $author['author_twitter'] ?>" target="_blank">
                                     <i class="fa fa-twitter"></i>

@@ -1,8 +1,30 @@
-.bg1{
-    background-color: #101b30;
+.bg1 {
+  background-color: #101828;
 }
 
-.bg2{
-    background-color: #101828;
+.bg2 {
+  background-color: #101828;
 }
- 
+
+.tcd {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #111a2b, #0e1624);
+  box-shadow: 5px 5px 10px #060a10, -5px -5px 10px #1a2640;
+  padding: 100px;
+}
+.wt {
+  color: white;
+}
+.abtn {
+  width: 200px;
+  box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
+  border-radius: 50px;
+  color: white;
+}
+
+.abtn:hover {
+  width: 200px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
