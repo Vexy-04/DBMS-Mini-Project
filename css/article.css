@@ -1,0 +1,60 @@
+.bg {
+  background-color: #101828;
+}
+
+.dscl {
+  height: 400px;
+  padding: 40px;
+  width: 500px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  color: white;
+}
+
+.dscl:hover {
+  height: 400px;
+  padding: 40px;
+  margin-bottom: 30px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
+.imgr {
+  border-radius: 30px;
+}
+
+.imgr:hover {
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+  transform: scale(1.02);
+}
+
+.abtn {
+  width: 180px;
+  height: 38px;
+  padding: 5px;
+  box-shadow: 5px 5px 8px #090e17, -5px -5px 8px #172239;
+  border-radius: 50px;
+  color: white;
+  margin-left: 15px;
+}
+
+.abtn:hover {
+  width: 180px;
+  height: 38px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
+.cnt {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.hd {
+  color: white;
+}

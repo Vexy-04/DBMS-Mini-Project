@@ -39,6 +39,7 @@ if (isset($_GET["catID"])) {
 <!-- Custom CSS -->
 <!-- <link href="css/home.css" rel="stylesheet"> -->
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/article.css" type="text/css" rel="stylesheet" />
 
 <title>Articles</title>
 </head>
@@ -53,26 +54,26 @@ if (isset($_GET["catID"])) {
     <main class="main">
 
         <!-- Latest Articles -->
-        <div class="section jumbotron mb-0 h-100">
+        <div class="section jumbotron mb-0 h-100 bg cnt">
             <!-- container -->
-            <div class="container">
+            <div class="">
 
                 <!-- row -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2><?= $catID == "" ? "" : $category['category_name'] ?> Articles</h2>
+                            <h2 class="hd"><?= $catID == "" ? "" : $category['category_name'] ?> Articles</h2>
 
                             <ul class="list-inline mt-1 mb-4">
-                                <li class="list-inline-item">
-                                    <a href="articleOfCategory.php" class="text-muted">
+                                <li class="list-inline-item abtn">
+                                    <a href="articleOfCategory.php" class="">
                                         All
                                     </a>
                                 </li>
 
                                 <?php foreach ($categories as $category) : ?>
-                                    <li class="list-inline-item">
-                                        <a href="articleOfCategory.php?catID=<?= $category['category_id'] ?>" class="text-muted">
+                                    <li class="list-inline-item abtn">
+                                        <a href="articleOfCategory.php?catID=<?= $category['category_id'] ?>" class="">
                                             <?= $category['category_name'] ?>
                                         </a>
                                     </li>
@@ -83,10 +84,10 @@ if (isset($_GET["catID"])) {
 
                     <?php foreach ($articles as $article) : ?>
                         <!-- post -->
-                        <div class="col-md-4">
-                            <div class="post">
+                        <div class="col-md-4 ">
+                            <div class="post dscl">
                                 <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
-                                    <img src="img/article/<?= $article['article_image'] ?>" alt="">
+                                    <img src="img/article/<?= $article['article_image'] ?>" class="imgr" alt="">
                                 </a>
                                 <di class="post-body">
 
