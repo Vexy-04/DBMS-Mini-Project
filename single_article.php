@@ -129,7 +129,7 @@ $comments = $stmt->fetchAll();
 
                         <ul class="list-group list-group-flush ">
                             <?php foreach ($articles as $article) : ?>
-                                <li class="list-group-item"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></li>
+                                <li class="listt aucd2"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></li>
                                 <!-- <li class="list-group-item"><a href="">How To Create A Simple With CSS</a></li>
                                 <li class="list-group-item"><a href="">How To Parallax Style Effect With CSSs</a></li> -->
                             <?php endforeach; ?>

@@ -124,3 +124,6 @@ video {
   box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
   color: white;
 }
+ .bgc{
+  background-color: #101;
+ }

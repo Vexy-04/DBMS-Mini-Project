@@ -1,4 +1,4 @@
-# InkSpark Blogging Page (InProgress)
+# InkSpark Blogging Page
 
 DBMS Mini Project for 5th Sem [ISE]
 
