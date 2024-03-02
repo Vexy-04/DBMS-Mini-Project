@@ -11,6 +11,7 @@
 
 .dbtn {
   width: 100px;
+  background: #101828;
   box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
   border-radius: 50px;
   color: white;
@@ -41,10 +42,10 @@
   color: white;
 } */
 
-.incs{
+.incs {
   border-radius: 5px;
 }
 
-.incsm{
+.incsm {
   margin-bottom: -20px;
 }

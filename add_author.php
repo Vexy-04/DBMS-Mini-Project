@@ -42,7 +42,7 @@
                         <div class="form-group">
                             <label  class="awt" for="authImage">Avatar</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input incs" name="authImage" id="authImage">
+                                <input type="file" class="custom-file-input " name="authImage" id="authImage">
                                 <label class="custom-file-label" for="authImage">Choose file</label>
                             </div>
                         </div>

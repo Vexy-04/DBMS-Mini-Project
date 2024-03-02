@@ -3766,6 +3766,9 @@ input[type="submit"].btn-block {
 }
 .custom-file-input:lang(en) ~ .custom-file-label::after {
   content: "Browse";
+  background: #101828;
+  box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
+  border-radius: 50px;
 }
 .custom-file-input ~ .custom-file-label[data-browse]::after {
   content: attr(data-browse);
