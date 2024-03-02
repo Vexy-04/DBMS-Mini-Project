@@ -26,6 +26,7 @@ $most_read_articles = $stmt->fetchAll();
 <!-- <link href="css/home.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/index.css" />
+
 <style>
     .bg-div {
         background: linear-gradient(rgba(0, 0, 0, 0),
@@ -39,7 +40,7 @@ $most_read_articles = $stmt->fetchAll();
     }
 </style>
 
-<title>Home</title>
+<title>InkSpark</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
