@@ -15,6 +15,7 @@ $authors = $stmt->fetchAll();
 
 <title>All Author</title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/author.css" />
 
 <style>
     .fa-twitter,
@@ -33,11 +34,11 @@ $authors = $stmt->fetchAll();
 
     <!-- Main -->
     <main role="main" class="main">
-        <div class="jumbotron text-center mb-0">
+        <div class="jumbotron text-center mb-0 bg1">
             <h1 class="display-3 font-weight-normal text-muted">All Author</h1>
         </div>
 
-        <div class="bg-white py-3 px-5">
+        <div class="py-3 px-5 bg2">
             <div class="row">
 
                 <div class="col-lg-12 text-center mb-3">
@@ -117,7 +118,7 @@ $authors = $stmt->fetchAll();
     </main><!-- </Main> -->
 
     <!-- Footer -->
-    <!-- <?php include "assest/footer.php" ?> -->
+   <?php include "assest/footer.php" ?>
 
 </body>
 
