@@ -12,6 +12,7 @@
 }
 
 .dsc {
+  height: 400px;
   padding: 40px;
   border-radius: 50px;
   background: #101828;
@@ -19,7 +20,18 @@
   color: white;
 }
 
+.dsc:hover {
+  height: 400px;
+  padding: 40px;
+  border-radius: 50px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
 .dscl {
+  height: 250px;
+  padding: 25px;
   margin-bottom: 30px;
   border-radius: 50px;
   background: #101828;
@@ -27,12 +39,36 @@
   color: white;
 }
 
-/* .cdsc {
-  border-radius: 10px;
+.dscl:hover {
+  height: 250px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 50px;
   background: #101828;
-  box-shadow: 11px 11px 25px #0a0f18, -11px -11px 25px #162138;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
   color: white;
-} */
+}
+
+.cdsc {
+  margin-left: 20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  /* background: linear-gradient(145deg, #0e1624, #111a2b);
+  box-shadow: 8px 8px 22px #080c14, -8px -8px 22px #18243c; */
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
+.cdsc:hover {
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  /* background: #101828; */
+  background: linear-gradient(145deg, #0e1624, #111a2b);
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
 
 .ctxt {
   color: white;
@@ -41,3 +77,45 @@
 a {
   color: white;
 }
+
+a:hover {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.st {
+  color: white;
+}
+
+.cst {
+  margin-left: 20px;
+  color: white;
+}
+
+/* .bpic {
+  padding: 15px;
+  border-radius: 44px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+} */
+
+/* .lbpic {
+  padding: 15px;
+  border-radius: 44px;
+  background: #101828;
+  box-shadow: inset 8px 8px 22px #080c14, inset -8px -8px 22px #18243c;
+} */
+
+.imgr {
+  border-radius: 30px;
+}
+
+.imgr:hover {
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+  transform: scale(1.02);
+}
+
+/* .crc{
+  border-radius: 100px;;
+} */

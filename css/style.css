@@ -196,7 +196,7 @@ textarea.input {
   padding-bottom: 10px;
 }
 
-.section-title h2:before {
+/* .section-title h2:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -205,7 +205,7 @@ textarea.input {
   height: 2px;
   background: #3dd07d;
   transform: translateX(-50%);
-}
+} */
 
 .section-row {
   margin-bottom: 40px;
@@ -955,7 +955,7 @@ textarea.input {
 .category-widget ul li {
   display: block;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eceef2;
+  /* border-bottom: 1px solid #eceef2; */
 }
 
 .category-widget ul li+li {

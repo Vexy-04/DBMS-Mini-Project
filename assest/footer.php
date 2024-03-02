@@ -1,4 +1,5 @@
-<footer class="footer blog-footer">
+<link rel="stylesheet" href="css/footer.css">
+<footer class="footer feet">
         <div class="containe">
                 <ul class="list-inline mb-3 h5">
                         <li class="list-inline-item"><a href="#">Article</a></li>
@@ -7,7 +8,7 @@
                         <li class="list-inline-item"><a href="#">Contact</a></li>
                 </ul>
 
-                <!-- <p class="text-muted">Copyright © <a href="https://github.com/KhalidLam">@KhalidLam</a>. All Rights Reserved.</p> -->
+                <p class="text-muted">Copyright © InkSpark</a>. All Rights Reserved.</p>
 
                 <!-- <ul class="list-inline mt-2">
                         <li class="list-inline-item"><a href="https://www.facebook.com/KhalidlamGK" target="_blanc"> <i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a></li>

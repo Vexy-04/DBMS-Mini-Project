@@ -57,7 +57,8 @@ $most_read_articles = $stmt->fetchAll();
 
                 <div class="text-left w-50">
                     <!-- <h1 class="display-4 text-white">Welcome to Dev Culture!</h1> -->
-                    <h2 class="display-5 text-white">Discover Dev tutorial and articles that you can read completely for free!</h2>
+                    <h2 class="display-5 text-white">Discover Dev tutorial and articles that you can read completely for
+                        free!</h2>
 
                 </div>
 
@@ -75,35 +76,44 @@ $most_read_articles = $stmt->fetchAll();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>Latest Articles</h2>
+                            <h2 class="st">Latest Articles</h2>
                         </div>
                     </div>
 
-                    <?php foreach ($articles as $article) : ?>
+                    <?php foreach ($articles as $article): ?>
 
                         <!-- post -->
                         <div class="col-md-4">
                             <div class="post pcard dsc">
-                                <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
-                                    <img src="img/article/<?= $article['article_image'] ?>" alt="">
-                                </a>
+                                <div class="bpic">
+                                    <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
+                                        <img src="img/article/<?= $article['article_image'] ?> " class="imgr" alt="">
+                                    </a>
+                                </div>
                                 <di class="post-body">
 
                                     <div class="post-meta">
-                                        <a class="post-category cat-1" href="articleOfCategory.php?catID=<?= $article['category_id'] ?>" style="background-color:<?= $article['category_color'] ?>"><?= $article['category_name'] ?></a>
+                                        <a class="post-category cat-1"
+                                            href="articleOfCategory.php?catID=<?= $article['category_id'] ?>"
+                                            style="background-color:<?= $article['category_color'] ?>">
+                                            <?= $article['category_name'] ?>
+                                        </a>
                                         <span class="post-date">
                                             <?= date_format(date_create($article['article_created_time']), "F d, Y ") ?>
                                         </span>
                                     </div>
 
-                                    <h3 class="post-title ctxt"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></h3>
+                                    <h3 class="post-title ctxt"><a
+                                            href="single_article.php?id=<?= $article['article_id'] ?>">
+                                            <?= $article['article_title'] ?>
+                                        </a></h3>
 
                                 </di>
                             </div>
                         </div>
                         <!-- /post -->
 
-                    <?php endforeach;  ?>
+                    <?php endforeach; ?>
 
                     <div class="clearfix visible-md visible-lg"></div>
                 </div>
@@ -123,21 +133,25 @@ $most_read_articles = $stmt->fetchAll();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title">
-                                    <h2>Most Read</h2>
+                                    <h2 class="st">Most Read</h2>
                                 </div>
                             </div>
 
-                            <?php foreach ($most_read_articles as $article) : ?>
+                            <?php foreach ($most_read_articles as $article): ?>
 
                                 <!-- post -->
                                 <div class="col-md-12 dscl">
                                     <div class="post post-row">
-                                        <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
-                                            <img src="img/article/<?= $article['article_image'] ?>" alt="">
-                                        </a>
+                                        <div class="lbpic">
+                                            <a class="post-img" href="single_article.php?id=<?= $article['article_id'] ?>">
+                                                <img src="img/article/<?= $article['article_image'] ?>" class="imgr" alt="">
+                                            </a>
+                                        </div>
                                         <div class="post-body">
                                             <div class="post-meta">
-                                                <a href="articleOfCategory.php?catID=<?= $article['category_id'] ?>" class="post-category" style="background-color:<?= $article['category_color'] ?>">
+                                                <a href="articleOfCategory.php?catID=<?= $article['category_id'] ?>"
+                                                    class="post-category crc"
+                                                    style="background-color:<?= $article['category_color'] ?>">
                                                     <?= $article['category_name'] ?>
                                                 </a>
                                                 <span class="post-date">
@@ -145,14 +159,19 @@ $most_read_articles = $stmt->fetchAll();
                                                 </span>
                                             </div>
 
-                                            <h3 class="post-title"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                            <h3 class="post-title"><a
+                                                    href="single_article.php?id=<?= $article['article_id'] ?>">
+                                                    <?= $article['article_title'] ?>
+                                                </a></h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam...</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- /post -->
 
-                            <?php endforeach;  ?>
+                            <?php endforeach; ?>
 
                             <!-- post -->
                             <!-- <div class="col-md-12">
@@ -231,16 +250,19 @@ $most_read_articles = $stmt->fetchAll();
                         <!-- catagories -->
                         <div class="aside-widget">
                             <div class="section-title">
-                                <h2>Categories</h2>
+                                <h2 class="cst">Categories</h2>
                             </div>
                             <div class="category-widget">
 
                                 <ul>
                                     <!-- /category -->
-                                    <?php foreach ($categories as $category) : ?>
+                                    <?php foreach ($categories as $category): ?>
                                         <li class="cdsc">
-                                            <a href="articleOfCategory.php?catID=<?= $category['category_id'] ?>"> <?= $category["category_name"] ?>
-                                                <span style="background-color: <?= $category["category_color"] ?>"> <?= $category["article_count"] ?></span>
+                                            <a href="articleOfCategory.php?catID=<?= $category['category_id'] ?>">
+                                                <?= $category["category_name"] ?>
+                                                <span style="background-color: <?= $category["category_color"] ?>">
+                                                    <?= $category["article_count"] ?>
+                                                </span>
                                             </a>
                                         </li>
                                     <?php endforeach; ?>
