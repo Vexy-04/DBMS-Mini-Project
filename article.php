@@ -20,6 +20,7 @@ $data = $stmt->fetchAll();
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 <title>Add Article</title>
+<link rel="stylesheet" href="css/ad_article.css">
 
 </head>
 
@@ -32,16 +33,16 @@ $data = $stmt->fetchAll();
     <!-- Main -->
     <main class="main">
 
-        <div class="jumbotron text-center mb-0">
-            <h1 class="display-3 font-weight-normal text-muted">All Articles</h1>
+        <div class="jumbotron text-center mb-0 bg">
+            <h1 class="display-3 font-weight-normal txt">All Articles</h1>
         </div>
 
-        <div class="bg-white p-4">
+        <div class="bg p-4">
 
             <div class="row ">
 
                 <div class="col-lg-12 text-center mb-3">
-                    <a class="btn btn-info" href="add_article.php">Add Article</a>
+                    <a class="btn abtn" href="add_article.php">Add Article</a>
                 </div>
 
             </div>
@@ -68,13 +69,13 @@ $data = $stmt->fetchAll();
                             echo "<tr>";
                             ?>
 
-                            <td><?= $row['article_id'] ?></td>
-                            <td><?= $row['article_title'] ?></td>
-                            <td class="text-break"><?= strip_tags(substr($row['article_content'], 0, 40)) . "..." ?></td>
-                            <td><img src="img/article/<?= $row['article_image'] ?>" style="width: 100px; height: auto;"></td>
-                            <td><?= $row['article_created_time'] ?></td>
-                            <td><?= $row['category_name'] ?></td>
-                            <td><?= $row['author_fullname'] ?></td>
+                            <td class="txt" ><?= $row['article_id'] ?></td>
+                            <td class="txt" ><?= $row['article_title'] ?></td>
+                            <td class="text-break txt"><?= strip_tags(substr($row['article_content'], 0, 40)) . "..." ?></td>
+                            <td class="txt" ><img src="img/article/<?= $row['article_image'] ?>" style="width: 100px; height: auto;"></td>
+                            <td class="txt" ><?= $row['article_created_time'] ?></td>
+                            <td class="txt" ><?= $row['category_name'] ?></td>
+                            <td class="txt" ><?= $row['author_fullname'] ?></td>
 
                             <td>
                                 <a class="btn btn-info" href="single_article.php?id=<?= $row['article_id'] ?> ">
@@ -106,7 +107,7 @@ $data = $stmt->fetchAll();
     </main>
 
     <!-- Footer -->
-    <!-- <?php include "assest/footer.php" ?> -->
+    <?php include "assest/footer.php" ?>
 
 
 </body>

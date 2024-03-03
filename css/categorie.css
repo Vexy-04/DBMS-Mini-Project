@@ -1,32 +1,24 @@
-.bg1 {
+.bg {
   background-color: #101828;
 }
 
-.bg2 {
-  background-color: #101828;
+.txt {
+  color: white;
 }
 
 .cont {
   padding-right: 80px;
   padding-left: 80px;
 }
-.tcd {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #111a2b, #0e1624);
-  box-shadow: 5px 5px 10px #060a10, -5px -5px 10px #1a2640;
-  padding: 100px;
-}
-.wt {
-  color: white;
-}
-.abtn {
+
+.cbtn {
   width: 200px;
   box-shadow: 8px 8px 8px #090e17, -8px -8px 8px #172239;
   border-radius: 50px;
   color: white;
 }
 
-.abtn:hover {
+.cbtn:hover {
   width: 200px;
   background: #101828;
   box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;

@@ -47,7 +47,7 @@ $authors = $stmt->fetchAll();
 
             </div>
 
-            <div class="row">
+            <div class="row cont">
                 <table class='table table-striped table-bordered tcd'>
 
                     <thead class='thead-dark'>
