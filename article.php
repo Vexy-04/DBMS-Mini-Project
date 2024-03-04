@@ -38,68 +38,83 @@ $data = $stmt->fetchAll();
         </div>
 
         <div class="bg p-4">
+            <div class="cont">
+                <div class="row ">
 
-            <div class="row ">
+                    <div class="col-lg-12 text-center mb-3">
+                        <a class="btn abtn" href="add_article.php">Add Article</a>
+                    </div>
 
-                <div class="col-lg-12 text-center mb-3">
-                    <a class="btn abtn" href="add_article.php">Add Article</a>
                 </div>
 
-            </div>
+                <div class="row">
+                    <table class='table table-striped table-bordered'>
 
-            <div class="row">
-                <table class='table table-striped table-bordered'>
+                        <thead class='thead-dark'>
+                            <tr>
+                                <th scope='col'>ID</th>
+                                <th scope='col'>Title</th>
+                                <th scope='col'>Content</th>
+                                <th scope='col'>Image</th>
+                                <th scope='col'>Created Time</th>
+                                <th scope='col'>Category</th>
+                                <th scope='col'>Author</th>
+                                <th scope='col' colspan="3">Actions</th>
+                            </tr>
+                        </thead>
 
-                    <thead class='thead-dark'>
-                        <tr>
-                            <th scope='col'>ID</th>
-                            <th scope='col'>Title</th>
-                            <th scope='col'>Content</th>
-                            <th scope='col'>Image</th>
-                            <th scope='col'>Created Time</th>
-                            <th scope='col'>Category</th>
-                            <th scope='col'>Author</th>
-                            <th scope='col' colspan="3">Actions</th>
-                        </tr>
-                    </thead>
+                        <tbody>
+                            <?php
+                            foreach ($data as $row):
+                                echo "<tr>";
+                                ?>
 
-                    <tbody>
-                        <?php
-                        foreach ($data as $row) :
-                            echo "<tr>";
+                                <td class="txt">
+                                    <?= $row['article_id'] ?>
+                                </td>
+                                <td class="txt">
+                                    <?= $row['article_title'] ?>
+                                </td>
+                                <td class="text-break txt">
+                                    <?= strip_tags(substr($row['article_content'], 0, 40)) . "..." ?>
+                                </td>
+                                <td class="txt"><img src="img/article/<?= $row['article_image'] ?>"
+                                        style="width: 100px; height: auto;"></td>
+                                <td class="txt">
+                                    <?= $row['article_created_time'] ?>
+                                </td>
+                                <td class="txt">
+                                    <?= $row['category_name'] ?>
+                                </td>
+                                <td class="txt">
+                                    <?= $row['author_fullname'] ?>
+                                </td>
+
+                                <td>
+                                    <a class="btn btn-info" href="single_article.php?id=<?= $row['article_id'] ?> ">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success" href="update_article.php?id=<?= $row['article_id'] ?> ">
+                                        <i class="fa fa-pencil " aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-danger"
+                                        href="assest/delete.php?type=article&id=<?= $row['article_id'] ?> ">
+                                        <i class="fa fa-trash " aria-hidden="true"></i>
+                                    </a>
+                                </td>
+
+                                <?php
+                                echo "</tr>";
+                            endforeach;
                             ?>
+                        </tbody>
 
-                            <td class="txt" ><?= $row['article_id'] ?></td>
-                            <td class="txt" ><?= $row['article_title'] ?></td>
-                            <td class="text-break txt"><?= strip_tags(substr($row['article_content'], 0, 40)) . "..." ?></td>
-                            <td class="txt" ><img src="img/article/<?= $row['article_image'] ?>" style="width: 100px; height: auto;"></td>
-                            <td class="txt" ><?= $row['article_created_time'] ?></td>
-                            <td class="txt" ><?= $row['category_name'] ?></td>
-                            <td class="txt" ><?= $row['author_fullname'] ?></td>
-
-                            <td>
-                                <a class="btn btn-info" href="single_article.php?id=<?= $row['article_id'] ?> ">
-                                    <i class="fa fa-eye" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                            <td>
-                                <a class="btn btn-success" href="update_article.php?id=<?= $row['article_id'] ?> ">
-                                    <i class="fa fa-pencil " aria-hidden="true"></i>
-                                </a>
-                            </td>
-                            <td>
-                                <a class="btn btn-danger" href="assest/delete.php?type=article&id=<?= $row['article_id'] ?> ">
-                                    <i class="fa fa-trash " aria-hidden="true"></i>
-                                </a>
-                            </td>
-
-                        <?php
-                            echo "</tr>";
-                        endforeach;
-                        ?>
-                    </tbody>
-
-                </table>
+                    </table>
+                </div>
             </div>
         </div>
 

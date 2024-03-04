@@ -2,6 +2,24 @@
   color: white;
 }
 
+.abtn {
+  width: 180px;
+  height: 38px;
+  padding: 5px;
+  box-shadow: 5px 5px 8px #090e17, -5px -5px 8px #172239;
+  border-radius: 50px;
+  color: white;
+  margin-left: 15px;
+}
+
+.abtn:hover {
+  width: 180px;
+  height: 38px;
+  background: #101828;
+  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
+  color: white;
+}
+
 .abg {
   background-color: #101828;
 }
@@ -93,3 +111,5 @@
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
 }
+
+
