@@ -7,7 +7,7 @@
                 <h3 class="txtcle" style="margin-bottom:0px;">InkSpark</h3> <!-- Added txtcle class -->
             </a>
 
-            <?php if ($loggedin) : ?>
+            <?php if ($loggedin): ?>
 
                 <nav class="my-2 my-md-0 mr-md-3">
                     <a class="p-2 px-5 text-white" href="index.php">Home</a>
@@ -16,14 +16,13 @@
                     <a class="p-2 px-5 text-white" href="author.php">Author</a>
                 </nav>
 
-            <?php else : ?>
+            <?php else: ?>
                 <nav class="my-2 my-md-0 mr-md-3">
                     <a class="p-2 px-5 text-white" href="articleOfCategory.php">Articles</a>
+                    <a class="btn dbtn" href="signup.php">Sign up</a>
                 </nav>
 
-            <?php endif;  ?>
-            <a class="btn dbtn" href="signup.php">Sign up</a>
-
+            <?php endif; ?>
             <a class="btn dbtn" href="<?= ($loggedin) ? 'Logout.php' : 'login.php'; ?>">
                 <?= ($loggedin) ? 'Logout' : 'Log in'; ?>
             </a>

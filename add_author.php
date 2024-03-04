@@ -62,7 +62,7 @@
 
 
                         <div class="text-center">
-                            <button type="submit" name="submit" class="btn btn-success btn-lg w-25">Submit</button>
+                            <button type="submit" name="submit" class="btn abtn 5">Submit</button>
                         </div>
                     </form>
                 </div>

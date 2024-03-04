@@ -30,6 +30,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    session_start();
+
+    // Store data in session variables
+    $_SESSION["loggedin"] = true;
+    $_SESSION["id"] = $id;
+    $_SESSION["username"] = $username;
+
+    // Redirect user to welcome page
+    header("location: index.php");
 }
 
 // Close the database connection
