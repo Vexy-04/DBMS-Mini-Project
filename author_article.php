@@ -8,12 +8,15 @@ if (!$loggedin) {
     exit;
 }
 
-// Get all Articles Data
-$sql = "CALL GetAllArticles()";
+// Assuming $currentAuthorId contains the ID of the currently logged-in author
+$currentAuthorId = 1; // Replace with the actual way you obtain the author ID
+
+// Call the stored procedure to get articles for the logged-in author
+$sql = "CALL GetAuthArticles(?)";
 $stmt = $conn->prepare($sql);
+$stmt->bindValue(1, $currentAuthorId, PDO::PARAM_INT); // Assuming the author ID is an integer
 $stmt->execute();
 $data = $stmt->fetchAll();
-
 ?>
 
 <!-- Custom CSS -->

@@ -8,7 +8,9 @@ if (!$loggedin) {
     exit;
 }
 
-$stmt = $conn->prepare("SELECT * FROM category");
+// Call the stored procedure to get categories
+$sql = "CALL GetCategories()";
+$stmt = $conn->prepare($sql);
 $stmt->execute();
 $categories = $stmt->fetchAll();
 

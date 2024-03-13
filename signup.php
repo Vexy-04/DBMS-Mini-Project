@@ -22,6 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hash the password
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
+    // Set the default role to "author"
+    $user_role = 'author';
+
     // Insert user data into the database with hashed password
     $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$hashed_password', '$email')";
     if ($conn->query($sql) === TRUE) {
