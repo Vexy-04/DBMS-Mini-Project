@@ -24,22 +24,3 @@
   box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
   color: white;
 }
-
-.incs {
-  height: 50px;
-  border: none;
-  border-radius: 30px;
-  background: #101828;
-  box-shadow: inset 8px 8px 8px #090e17, inset -8px -8px 8px #172239;
-  color: white;
-}
-
-.pd {
-  padding: 15px;
-}
-
-#catColor {
-  border-radius: 5px;
-  background: #101828;
-  box-shadow: inset 20px 20px 24px #070b12, inset -20px -20px 24px #19253e;
-}

@@ -9,8 +9,7 @@ if (!$loggedin) {
 }
 
 // Get all Articles Data
-$sql = "CALL GetAllArticles()";
-$stmt = $conn->prepare($sql);
+$stmt = $conn->prepare("SELECT * FROM article, author, category WHERE id_categorie = category_id AND author_id = id_author ORDER BY article_id DESC");
 $stmt->execute();
 $data = $stmt->fetchAll();
 
