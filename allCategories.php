@@ -8,7 +8,8 @@ if (!$loggedin) {
     exit;
 }
 
-$stmt = $conn->prepare("SELECT * FROM category");
+$sql = "CALL GetCategories()";
+$stmt = $conn->prepare($sql);
 $stmt->execute();
 $categories = $stmt->fetchAll();
 

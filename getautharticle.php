@@ -7,10 +7,12 @@ if (!$loggedin) {
     header("location: index.php");
     exit;
 }
+$currentAuthorId = 1    ; // Replace with the actual way you obtain the author ID
 
-// Get all Articles Data
-$sql = "CALL GetAllArticles()";
+// Call the stored procedure to get articles for the logged-in author
+$sql = "CALL GetAuthArticles(?)";
 $stmt = $conn->prepare($sql);
+$stmt->bindValue(1, $currentAuthorId, PDO::PARAM_INT); // Assuming the author ID is an integer
 $stmt->execute();
 $data = $stmt->fetchAll();
 
@@ -40,13 +42,7 @@ $data = $stmt->fetchAll();
 
         <div class="bg p-4">
             <div class="cont">
-                <div class="row ">
 
-                    <div class="col-lg-12 text-center mb-3">
-                        <a class="btn abtn" href="add_article.php">Add Article</a>
-                    </div>
-
-                </div>
 
                 <div class="row">
                     <table class='table table-striped table-bordered'>
