@@ -113,6 +113,31 @@ $comments = $stmt->fetchAll();
                             </div>
                         </div>
                     </div><!-- /Author Info -->
+
+                    <!-- Other articles  -->
+                    <!-- <div class="p-3 bg-white border  border-muted">
+
+                            <div class="d-flex align-items-center">
+                                <img class="profile-thumbnail rounded-circle" src="img/avatar/<?= $article['author_avatar'] ?>" alt="test avatar image" style="width: 60px;height: 60px;">
+                                <h5 class="font-italic"><?= $article['author_fullname'] ?></h5>
+                            </div>
+                            <p class="author_desc"><?= $article['author_desc'] ?></p>
+
+                        </div> -->
+                    <div class="card my-3 aucd2">
+                        <div class="card-header st"><strong> More from <?= $article['author_fullname'] ?></strong></div>
+
+                        <ul class="list-group list-group-flush ">
+                            <?php foreach ($articles as $article) : ?>
+                                <li class="list-group-item "><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></li>
+                                <!-- <li class="list-group-item"><a href="">How To Create A Simple With CSS</a></li>
+                                <li class="list-group-item"><a href="">How To Parallax Style Effect With CSSs</a></li> -->
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <!-- /Other articles  -->
+
+
                 </div><!-- /Aside -->
 
             </div>

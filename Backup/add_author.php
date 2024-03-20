@@ -1,8 +1,7 @@
 <!-- Include Head -->
 <?php include "assest/head.php"; ?>
 
-
-<title>Become a Author</title>
+<title>Add Author</title>
 <link type="text/css" rel="stylesheet" href="css/add_author.css" />
 </head>
 
@@ -15,7 +14,7 @@
     <main role="main" class="main abg">
 
         <div class="jumbotron text-center abg">
-            <h1 class="display-3 font-weight-normal awt">Become a Author</h1>
+            <h1 class="display-3 font-weight-normal awt">Add Author</h1>
         </div>
 
         <div class="cont abg">

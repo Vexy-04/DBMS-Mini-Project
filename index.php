@@ -1,5 +1,5 @@
 <!-- Include Head -->
-<?php include "assest/title.php"; ?>
+<!-- <?php include "assest/title.php"; ?> -->
 <?php include "assest/head.php"; ?>
 <?php
 

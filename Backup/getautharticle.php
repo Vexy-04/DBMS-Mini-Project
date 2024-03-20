@@ -1,21 +1,13 @@
 <!-- Include Head -->
 <?php include "assest/head.php"; ?>
 <?php
-// Check if the user is logged in
+
+// Check if the admin is already logged in, if yes then redirect him to home page
 if (!$loggedin) {
     header("location: index.php");
     exit;
 }
-
-// Fetch the user's ID from the session
-$user_id = $_SESSION['id'];
-
-// Fetch the corresponding author ID from the database
-$sql = "SELECT author_id FROM author WHERE user_id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bindValue(1, $user_id, PDO::PARAM_INT);
-$stmt->execute();
-$currentAuthorId = $stmt->fetchColumn();
+$currentAuthorId = 1    ; // Replace with the actual way you obtain the author ID
 
 // Call the stored procedure to get articles for the logged-in author
 $sql = "CALL GetAuthArticles(?)";

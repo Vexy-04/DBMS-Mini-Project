@@ -41,7 +41,7 @@ $authors = $stmt->fetchAll();
                         </div>
 
                         <div class="form-group">
-                            <label class="txt" for="arContent">Content</label>
+                            <label incs for="arContent">Content</label>
                             <textarea class="form-control" name="arContent" id="arContent" rows="3" required></textarea>
                         </div>
 
@@ -51,6 +51,10 @@ $authors = $stmt->fetchAll();
                                 <input type="file" class="custom-file-input" name="authImage" id="authImage">
                                 <label class="custom-file-label" for="authImage">Choose file</label>
                             </div>
+                        </div>
+
+                        <div class="my-2" style="width: 200px;">
+                            <img class="w-100 h-auto" src="img/article/<?= $article["article_image"] ?>" alt="">
                         </div>
 
                         <div class="form-group">

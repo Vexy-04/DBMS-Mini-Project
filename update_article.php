@@ -25,6 +25,7 @@ $authors = $stmt->fetchAll();
 <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 
 <title>Update Article</title>
+<link rel="stylesheet" href="css/ad_article.css">
 </head>
 
 <body>
@@ -36,33 +37,33 @@ $authors = $stmt->fetchAll();
     <!-- Main -->
     <main role="main" class="main">
 
-        <div class="jumbotron text-center">
-            <h1 class="display-3 font-weight-normal text-muted">Update Article</h1>
+        <div class="jumbotron text-center bg">
+            <h1 class="display-3 font-weight-normal txt">Update Article</h1>
         </div>
 
-        <div class="container">
+        <div class="cont bg">
             <div class="row">
 
-                <div class="col-lg-8 mb-4">
+                <div class="col-lg-12 mb-4">
                     <!-- Form -->
                     <form action="assest/update.php?type=article&id=<?= $article_id ?>&img=<?= $article["article_image"] ?>" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <label for="arTitle">Title</label>
-                            <input type="text" class="form-control" name="arTitle" id="arTitle" value="<?= $article["article_title"] ?>">
+                            <label class="txt" for="arTitle">Title</label>
+                            <input type="text" class="form-control incs" name="arTitle" id="arTitle" value="<?= $article["article_title"] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="arContent">Content</label>
-                            <textarea class="form-control" name="arContent" id="arContent" rows="3">
+                            <label class="txt" for="arContent">Content</label>
+                            <textarea class="form-control incs" name="arContent" id="arContent" rows="3">
                             <?= $article["article_content"] ?>
                         </textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="UploadImage">Image</label>
+                            <label class="txt" for="UploadImage">Image</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="arImage" id="arImage">
+                                <input type="file" class="custom-file-input" name="arImage" id="authImage">
                                 <label class="custom-file-label" for="UploadImage"> <?= $article['article_image'] ?></label>
                             </div>
 
@@ -73,8 +74,8 @@ $authors = $stmt->fetchAll();
                         </div>
 
                         <div class="form-group">
-                            <label for="arCategory">Category</label>
-                            <select class="custom-select" name="arCategory" id="arCategory">
+                            <label class="txt" for="arCategory">Category</label>
+                            <select class="custom-select incs" name="arCategory" id="arCategory">
                                 <option disabled>-- Select Category --</option>
 
                                 <?php foreach ($categories as $category) : ?>
@@ -96,8 +97,8 @@ $authors = $stmt->fetchAll();
 
 
                         <div class="form-group">
-                            <label for="arauthor">Author</label>
-                            <select class="custom-select" name="arAuthor" id="arAuthor">
+                            <label class="txt" for="arauthor">Author</label>
+                            <select class="custom-select incs" name="arAuthor" id="arAuthor">
                                 <option disabled>-- Select Author --</option>
 
                                 <?php foreach ($authors as $author) : ?>
@@ -119,16 +120,16 @@ $authors = $stmt->fetchAll();
                             </select>
                         </div>
                         <div class="text-center">
-                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Update</button>
+                            <button type="submit" name="update" class="btn abtn btn-lg w-25">Update</button>
                         </div>
 
 
                     </form>
                 </div>
 
-                <div class="col-lg-4 mb-4">
-                    <!-- <h1> Random Articles </h1>  -->
-                </div>
+                <!-- <div class="col-lg-4 mb-4">
+                   <h1> Random Articles </h1>  
+                </div> -->
 
 
             </div>

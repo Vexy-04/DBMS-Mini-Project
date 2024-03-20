@@ -6,7 +6,7 @@ $type = $_GET['type'];
 
 if ($conn) {
 
-    if (isset ($_POST["submit"])) {
+    if (isset($_POST["submit"])) {
 
         switch ($type) {
             case "article":
@@ -17,7 +17,7 @@ if ($conn) {
                 $data = array(
                     "article_title" => test_input($_POST["arTitle"]),
                     "article_content" => $_POST["arContent"],
-                    "article_image" => test_input($_FILES["authImage"]["name"]),
+                    "article_image" => test_input($_FILES["arImage"]["name"]),
                     "article_created_time" => date('Y-m-d H:i:s'),
                     "id_categorie" => test_input($_POST["arCategory"]),
                     "id_author" => test_input($_POST["arAuthor"])
@@ -40,7 +40,7 @@ if ($conn) {
 
                 // PREPARE DATA TO INSERT INTO DB
                 $data = array(
-                    "category_name" => test_input($_POST["catName"]),
+                    "category_name"  => test_input($_POST["catName"]),
                     "category_image" => test_input($_FILES["catImage"]["name"]),
                     "category_color" => test_input($_POST["catColor"]),
                 );
@@ -56,8 +56,6 @@ if ($conn) {
                 break;
 
             case "author":
-                // Retrieve user ID from session
-                $user_id = $_SESSION['id'];
 
                 // Upload Image
                 uploadImage2("authImage", "../img/avatar/");
@@ -66,12 +64,11 @@ if ($conn) {
                 $data = array(
                     "author_fullname" => test_input($_POST["authName"]),
                     "author_desc" => test_input($_POST["authDesc"]),
-                    "author_email" => test_input($_POST["authEmail"]),
-                    "author_twitter" => test_input($_POST["authTwitter"]),
+                    "author_email" =>  test_input($_POST["authEmail"]),
+                    "author_twitter" =>  test_input($_POST["authTwitter"]),
                     "author_github" => test_input($_POST["authGithub"]),
                     "author_link" => test_input($_POST["authLinkedin"]),
-                    "author_avatar" => test_input($_FILES["authImage"]["name"]),
-                    "user_id" => $user_id
+                    "author_avatar" => test_input($_FILES["authImage"]["name"])
                 );
 
                 $tableName = 'author';
@@ -80,7 +77,7 @@ if ($conn) {
                 insertToDB($conn, $tableName, $data);
 
                 // Go to show.php
-                header("Location: ../author.php", true, 301);
+                // header("Location: ../author.php", true, 301);
                 exit;
                 break;
 
@@ -94,7 +91,7 @@ if ($conn) {
                     // "comment_avatar" => test_input($_POST["comment_avatar"]),
                     "comment_content" => test_input($_POST["comment"]),
                     "comment_date" => date('Y-m-d H:i:s'),
-                    "id_article" => test_input($_POST["id_article"])
+                    "id_article" =>  test_input($_POST["id_article"])
                 );
 
                 $tableName = 'comment';
