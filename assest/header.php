@@ -42,12 +42,13 @@ if ($loggedin) {
                     </nav>
                 <?php elseif ($_SESSION['user_role'] == 'author'): ?>
                     <nav class="my-2 my-md-0 mr-md-3">
+                        <a class="p-2 px-5 text-white" href="articleOfCategory.php">Articles</a>
                         <a class="p-2 px-5 text-white" href="getautharticle.php">My Articles</a>
                         <a class="p-2 px-5 text-white" href="add_article.php">Submit Article</a>
                     </nav>
                 <?php elseif ($_SESSION['user_role'] == 'vistor'): ?>
                     <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-2 px-5 text-white" href="articleOfCategory.php">Articles</a>
+                        <a class="p-2 px-5 text-white" href="articleOfCategory.php">Articles</a>
                         <a class="p-2 px-5 text-white" href="add_author.php">Become a author</a>
                     </nav>
                 <?php endif; ?>

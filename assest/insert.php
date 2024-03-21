@@ -17,7 +17,7 @@ if ($conn) {
                 $data = array(
                     "article_title" => test_input($_POST["arTitle"]),
                     "article_content" => $_POST["arContent"],
-                    "article_image" => test_input($_FILES["authImage"]["name"]),
+                    "article_image" => test_input($_FILES["arImage"]["name"]),
                     "article_created_time" => date('Y-m-d H:i:s'),
                     "id_categorie" => test_input($_POST["arCategory"]),
                     "id_author" => test_input($_POST["arAuthor"])
@@ -57,7 +57,7 @@ if ($conn) {
 
             case "author":
                 // Retrieve user ID from session
-                $user_id = $_SESSION['id'];
+                $user_id = $_SESSION['id']; 
 
                 // Upload Image
                 uploadImage2("authImage", "../img/avatar/");
